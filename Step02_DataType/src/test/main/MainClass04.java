@@ -18,6 +18,8 @@ public class MainClass04 {
 		// 만일 정확한 실수 값을 얻어내고 싶으면 연산에 참여하는 데이터 중에 
 		// 어느 하나가 실수 type 이 되어야 실수 type 이 결과로 나온다. 
 		double ave=(double)sum/3;
+		// double ave=sum/3.0; 이런방법도 있음
+		
 		// 4. ave 안에 들어 있는 값을 콘솔창에 출력 해 보세요.
 		System.out.println(ave);
 	}
