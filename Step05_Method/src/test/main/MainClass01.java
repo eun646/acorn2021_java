@@ -1,5 +1,7 @@
 package test.main;
 
+import java.io.File;
+
 import test.mypac.MyObject;
 
 public class MainClass01 {
@@ -16,5 +18,24 @@ public class MainClass01 {
 		//4. m1 안에 들어 있는 참조값을 이용해서 getGreegint() 메소드를 다시 호출하고
 	    //리턴되는 값을 b 라는 이름의 지역 변수에 담아 보세요.
 		String b=m1.getGreeting();
+		
+		//delete 기능 알아보기
+		//mkdir() 디렉토리 생성
+		/*File f1=new File("C:\\acorn202112\\myFolder");
+		boolean isSuccess=f1.delete();
+		if(isSuccess) {
+			System.out.println("삭제성공");
+		}else {
+			System.out.println("삭제 실패");
+		}
+		*/
+		//myFolder가 존재하면 삭제하고, 존재하지 않으면 만드는 프로그래밍을 설계해보세요.
+		File f1 = new File("C:\\acorn202112\\myFolder");
+		boolean isExist = f1.exists();
+		if(isExist) { // if(f1.exists()) 이렇게 넣어도 되지만 익숙해질때가진 원래대로 익히기
+			f1.delete();
+		}else {
+			f1.mkdir();
+		}
 	}
 }
