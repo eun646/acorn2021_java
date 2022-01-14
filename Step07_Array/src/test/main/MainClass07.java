@@ -29,7 +29,26 @@ public class MainClass07 {
 		FriendDto f2= new FriendDto(2, "해골", "011", "여");
 		FriendDto f3= new FriendDto(3, "원숭이", "017", "남");
 	
-		FriendDto[] friends= {f1, f2, f3};
+		//FriendDto[] friends= {f1, f2, f3};
+		
+		FriendDto[] friends=new FriendDto[3];
+		friends[0]=f1;
+		friends[1]=f2;
+		friends[2]=f3;
+		
+		//반복문돌기
+		for(int i=0; i<friends.length; i++) {
+			FriendDto tmp=friends[i];
+			
+			System.out.println(tmp.getName()+"|"+tmp.getNum()+"|"
+					+tmp.getPhone()+"|"+tmp.getGender());
+		}
+		
+		
+		int num1=0b001; //0b로 시작하면 2진수
+		int num2=011; // 0로 시작하면 8진수
+		int num3=0xbb; // 0x로 시작하면 16진수
+		
+		
 	}
-
 }
