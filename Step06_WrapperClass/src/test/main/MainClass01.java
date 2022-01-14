@@ -34,7 +34,7 @@ public class MainClass01 {
 		
 		/*
 		 *  Integer 클래스의 static 메소드를 이용해서
-		 *  "999" => 999 정수로 바꾸기 
+		 *  "999" => 999 정수로 바꾸기 (숫자형태의문자열을 숫자열로 바꿀대 parseInt 씀)
 		 */
 		int result5=Integer.parseInt("999");
 	}
