@@ -16,7 +16,7 @@ import test.mypac.SmartPhone;
  */
 public class MainClass05 {
 	public static void main(String[] args) {
-		Phone p1=new Phone();
+		Phone p1=new Phone(); //오류안나게하려면 SmartPhone(); 
 		//runtime 시에 ClassCastException 이 발생한다.
 		//위의 설명에서 2 번과 같은 경우이다.
 		SmartPhone p2=(SmartPhone)p1;
