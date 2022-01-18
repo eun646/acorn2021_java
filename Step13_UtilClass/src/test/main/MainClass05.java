@@ -34,6 +34,14 @@ public class MainClass05 {
 			String tmp=names.get(i);
 			System.out.println(i+" 번째 친구 이름 : "+tmp);
 		}
+		/*for 반복문 확장_이렇게도 사용가능
+		for(int i=0; i<names.size(); i++) {
+		String tmp=names.get(i);
+		System.out.println(i+" 번째 친구 이름 : "+tmp);
+		}
+		*/
+		
+		
 		System.out.println("----------------");
 		for(String tmp:names) {
 			System.out.println("친구 이름 : "+tmp);
