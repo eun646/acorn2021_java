@@ -32,9 +32,28 @@ public class MainClass07 {
 		//3. 
 		for(Car tmp:cars) {
 			tmp.drive();
+				
+		/*
+		 *  for 확장_이렇게도 가능함
+		List<Car> cars =new ArrayList<>();
+	 	cars.add(new Car("내차"));
+	 	cars.add(new Car("니차"));
+	 	cars.add(new Car("우리차"));
+	 
+	 	for(int i=0; i<cars.size(); i++) {
+		Car tmp = cars.get(i);
+		tmp.drive();
+	 	}
+	 	System.out.println("----------");
+	 	for(Car tmp : cars) {
+		tmp.drive();
+		}	
+		*/
+			
 		}
 	}
 }
+
 
 
 
