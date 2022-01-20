@@ -17,7 +17,7 @@ public class MainClass {
 		boolean result4 = name1.equals(name3); //true
 		boolean result5 = name3.equals(name4); //true
 		boolean result6 = "김구라".equals(name1); //true
-		
+		boolean result7 = name1.equals("김구라"); //true
 	
 	}
 }
