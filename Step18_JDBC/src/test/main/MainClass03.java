@@ -16,11 +16,11 @@ public class MainClass03 {
 			//드라이버 로딩
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			//접속할 DB 정보
-			String url="jdbc:oracle:thin:@14.63.164.99:1521:xe";
-			//String url="jdbc:oracle:thin:@localhost:1521:xe";
+			//String url="jdbc:oracle:thin:@14.63.164.99:1521:xe";
+			String url="jdbc:oracle:thin:@localhost:1521:xe";
 			//접속하고 Connection 객체의 참조값 얻어오기
-			conn=DriverManager.getConnection(url, "acorn01", "tiger01");
-			//conn=DriverManager.getConnection(url, "scott", "tiger");
+			//conn=DriverManager.getConnection(url, "acorn01", "tiger01");
+			conn=DriverManager.getConnection(url, "scott", "tiger");
 			System.out.println("Oracle DB 접속 성공");
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -35,8 +35,8 @@ public class MainClass03 {
 					+ " VALUES(member_seq.NEXTVAL, ?, ?)";
 			pstmt=conn.prepareStatement(sql);
 			// ? 에 순서대로 값을 바인딩 하기 
-			pstmt.setString(1, name);
-			pstmt.setString(2, addr);
+			pstmt.setString(1, name); //1번째 ? 에 name 변수안에 있는 문자열 바인딩 ? => '톰캣'
+			pstmt.setString(2, addr); //2번째 ? 에 addr 변수안에 있는 문자열 바인딩 ? => '건물옥상'
 			//완성된 sql 문을 수행하고 변화된 row 의 갯수를 리턴 받는다.
 			flag=pstmt.executeUpdate();
 			System.out.println("회원 정보를 저장 했습니다.");
