@@ -9,6 +9,7 @@ public class MainClass02 {
 		System.out.println("메인 메소드가 시작 되었습니다.");
 		//키보드로 부터 입력 받을수 있는 객체의 참조값을 kbd 라는 이름의 지역 변수에 담기
 		InputStream kbd=System.in;
+		//2byte 처리 스트림이기 때문에 한글 입력 가능
 		InputStreamReader isr=new InputStreamReader(kbd);
 		
 		try {
