@@ -12,7 +12,9 @@ public class MainClass12 {
 		//1.
 		File f=new File("c:/myFolder/memo.txt");
 		try {
+			//만일 존재하지 않으면
 			if(!f.exists()) {
+				//새로운 파일 만들기
 				f.createNewFile();
 				System.out.println("memo.txt 파일을 생성했습니다.");
 			}
